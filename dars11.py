@@ -93,7 +93,7 @@ elif yosh <= 18:
 
 else :
     print('20 000 so\'m')
-"""
+
 
 
 
@@ -115,5 +115,142 @@ elif son1 <= son2:
 
 elif son1 >= son2:
     print(f' {son1} Soni katta {son2} sonidan!')
+
+
+
+
+print('6.mahsulotlar degan ro\'yxat yarating va kamida 10 ta turli mahsulotni kiriting.')
+
+mahsulotlar = ['Olma', 'coca cola', 'kolbasa', 'sasiska', 'pepsi', 'mandarin', 'banan','go`sht', 'sabzi', 'anjir']
+
+
+print('7.Yangi, savat degan bo\'sh ro\'yxat yarating va foydalanuvchidan savatga ')
+print('kamida 5 ta mahsulot kiritishni so\'rang. Savatdagi elementlarni, mahsulotlar') 
+print('ro\'yxati bilan solishtiring va qaysi biri ro\'yxatda bo\'lsa ')
+print('"Mahsulot do\'konimizda bor" aks holda, "Mahsulot do\'konimizda yo\'q" ')
+print('degan xabarlarni chiqaring.')
+savat = list()
+
+
+
+
+for n in range(1, 6):
+    mahsulot = input(f'{n}-harid qilmoqchi bo\'lgan mahsulotingizni kiriting_>>>')
+
+    if mahsulot in mahsulotlar:
+        print('--------------------------')
+        print('Mahsulot Do\'konimizda bor')
+        print('--------------------------')
+    else:
+        print('----------------------------')
+        print('Mahsulot do\'konimizda yo\'q')
+        print('----------------------------')
+
+
+
+
+
+print('8.Yuqoridagi dasturni quyidagicha o\'zgartiring: foydalanuvchidan ')
+print('5 ta mahsulot kiritishni so\'rang. Foydalanuvchi so\'ragan ')
+print('va do\'konda bor mahsulotlarni ')
+print('yang, bor_mahsulotlar degan ro\'yxatga, do\'konda yo\'q mahsulotlarni ')
+print('esa mavjud_emas degan ro\'yxatga qo\'shing. Agar mavjud_emas ')
+print('ro\'yxati bo\'sh bo\'lsa, "Siz so\'ragan barcha mahsulotlar do\'konimizda bor"') 
+print('degan xabarni, aks holda esa "Quyidagi mahsulotlar ')
+print('do\'konimizda yo\'q: ....." degan xabarni chiqaring.')
+
+
+mahsulotlar = ['Olma', 'coca cola', 'kolbasa', 'sasiska', 'pepsi', 'mandarin', 'banan','go`sht', 'sabzi', 'anjir']
+savat = list()
+bor_mahsulotlar = list()
+mavjud_emas = list()
+boshla = True
+
+
+for n in range(1, 6):
+    mahsulot = input(f'{n}-harid qilmoqchi bo\'lgan mahsulotingizni kiriting_>>>')
+
+    if mahsulot in mahsulotlar:
+        print('--------------------------')
+        print(f'{mahsulot} Do\'konimizda bor')
+        print('--------------------------')
+        bor_mahsulotlar.append(mahsulot)
+    else:
+        boshla = False
+        print('----------------------------')
+        print(f'{mahsulot} do\'konimizda yo\'q')
+        print('----------------------------')
+        mavjud_emas.append(mahsulot)
+
+
+    
+if boshla :
+    print('---------------------------------------------------')
+    print('Siz so\'ragan barcha mahsulotlar do\'konimizda bor!')
+    print('---------------------------------------------------')
+
+else:
+    print('------------------------------------------')
+    print(f'Siz so\'ragan quydagi: {mavjud_emas} ')
+    print('mahsulotlar afsuski do\'konimzda yo\'q!')
+    print('------------------------------------------')
+
+
+print('9.foydalanuvchilar degan ro\'yxat tuzing, va kamida 5 ta login qo\'shing.') 
+print('Foydalanuvchidan yangi login tanlashni so\'rang va foydalanuvchi kiritgan ')
+print('loginni foydalanuvchilar degan ro\'yxatning tarkibi bilan solishtiring. ')
+print('Agar ro\'yxatda bunday login mavjud bo\'lsa, "Login band, yangi login tanlang!" ')
+print('aks holda "Xush kelibsiz, foydalanuvchi!" xabarini chiqaring.')
+
+
+foydalanuvchilar = ['temirov', 'shermukhammad', 'shake', 'xon007', 'agent007', 'jeyms_bond']
+boshla = 1
+toxta = 3
+
+
+
+
+for n in range(boshla, toxta):
+    print('Sign in:')
+    yangi_boy = input('o\'zingiz uchun yangi login kiriting_>>>')
+
+    if yangi_boy in foydalanuvchilar:
+        print('-----------------------------------')
+        print(n)
+        print(f'Kechirasiz ushbu {yangi_boy} band!')
+        print('Yangi login tanlang')
+        print('-----------------------------------')
+        toxta =+ 2
+    else:
+        print('-----------------------------')
+        print(f'Xush kelibsiz, foydalanuvchi!')
+        print('-----------------------------')
+"""
+
+print('10.Foydalanuvchidan biror butun son kiritishni so\'rang. Foydalanuvchi ') 
+print('kiritgan sonni 2 da 10 gacha bo\'lgan sonlardan qay biriga qoldiqsiz') 
+print('bo\'linishini konsolga chiqaring.')
+
+son = int(input('Istalgan butun son kiriting_>>>'))
+javoblar = list()
+
+for n in range(2,11 ):
+    natija = son % n
+    if natija == 0:
+        javoblar.append(n)
+print(f'{son} soni {javoblar} ga  qoldiqsiz bo\'linadi!')
+
+
+
+
+        
+
+
+
+
+
+
+ 
+
 
 
