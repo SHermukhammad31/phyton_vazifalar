@@ -227,20 +227,31 @@ for n in range(boshla, toxta):
         print('-----------------------------')
 """
 
-print('10.Foydalanuvchidan biror butun son kiritishni so\'rang. Foydalanuvchi ') 
-print('kiritgan sonni 2 da 10 gacha bo\'lgan sonlardan qay biriga qoldiqsiz') 
-print('bo\'linishini konsolga chiqaring.')
-
-son = int(input('Istalgan butun son kiriting_>>>'))
-javoblar = list()
-
-for n in range(2,11 ):
-    natija = son % n
-    if natija == 0:
-        javoblar.append(n)
-print(f'{son} soni {javoblar} ga  qoldiqsiz bo\'linadi!')
 
 
+print('10.Foydalanuvchidan biror butun son kiritishni so\'rang.')
+print('Foydalanuvchi kiritgan sonni 2 da 10 gacha bo\'lgan sonlardan qay') 
+print('biriga qoldiqsiz bo\'linishini konsolga chiqaring.')
+
+
+son = int(input('Butun son kiriting_>>>'))
+natija = list()
+
+
+
+for n in range(2, 11):
+    if son % n == 0:
+        natija.append(n)
+        bosh = True
+        
+
+
+
+print(f'{son} soni {natija} qoldiqsiz bo\'linadi! ')
+    
+
+
+        
 
 
         
