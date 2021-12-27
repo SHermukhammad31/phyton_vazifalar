@@ -151,7 +151,7 @@ print('Yuqoridagi vazifani if-else yordamida qiling va ')
 print('natijani ham foydalanuvchiga tushunarli ko\'rinishda chiqaring.')
 
 
-python_words = {\
+python_words = {
     'integer' : 'butun son ma`lumot turi!' ,
     'float' : 'qoldiq son ma`lumot turi!',
     'type()' : 'Ma`lumot turini aniqlovchi funksya!',
