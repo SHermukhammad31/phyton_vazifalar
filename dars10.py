@@ -1,4 +1,4 @@
-#8-dars
+#10-dars
 
 """
 Amaliyot:
