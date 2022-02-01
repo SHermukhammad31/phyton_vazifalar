@@ -1,7 +1,9 @@
+#16 NESTING
+
 AMALIYOT
 
 
-s
+
 1.Adabiyot (ilm-fan, san'at, internet) olamidagi 4 ta mashxur shaxlar haqidagi ma'lumotlarni lug'at
 ko'rinishida saqlang. Lug'atlarni bitta ro'yxatga joylang, va har bir shaxs haqidagi ma'lumotni konsolga
 chiqaring.
