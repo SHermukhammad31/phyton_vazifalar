@@ -17,7 +17,7 @@ ism = friends [1]
 mehmonlar.insert(0, friends.pop(4))
 mehmonlar.insert(1, friends.pop(-1))
 mehmonlar.insert(2, friends.pop(0))
-mehmonlar.insert(3, friends.pop(1))
+mehmonlar.insert(3, friends.pop(0))
 mehmonlar.append(ism)
 
 
